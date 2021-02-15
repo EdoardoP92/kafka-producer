@@ -1,0 +1,180 @@
+{
+  "clientTransactionId": "04881596790634379651733458167884566595482222531744",
+  "transactionId": "TRX_work-manager-task-21183495118947128272",
+  "responseBody": {
+    "deviceManagementResponse": {
+      "callStatus": {
+        "statusCode": "SUCCESS",
+        "statusDescription": ""
+      },
+      "deviceData": [
+        {
+          "bindingType": "NONE",
+          "lookupLabel": "No Label"
+        }
+      ]
+    },
+    "requiredCredentialList": {
+      "requiredCredential": [
+        {
+          "credentialType": "USER_DEFINED",
+          "genericCredentialType": "SCA",
+          "groupName": "DEFAULT",
+          "preference": 0.0,
+          "required": true
+        }
+      ]
+    },
+    "riskResult": {
+      "riskScore": 1000.0,
+      "riskScoreBand": "SCORE_BAND_4",
+      "triggeredRule": {
+        "actionCode": "CHALLENGE",
+        "actionName": "SCA",
+        "actionType": "STRICT",
+        "clientFactList": {},
+        "ruleId": "SCA",
+        "ruleName": "SCA"
+      },
+      "deviceAssuranceLevel": "MEDIUM_HIGH"
+    },
+    "deviceResult": {
+      "authenticationResult": {
+        "authStatusCode": "SUCCESS",
+        "risk": 0.0
+      },
+      "callStatus": {
+        "statusCode": "SUCCESS"
+      },
+      "deviceData": {
+        "bindingType": "NONE",
+        "deviceTokenCookie": "PMV60szrvUPvtY5rfRmOeDMaGOY4JzIK%2Fd69xZbah3sD31o67Z4ZgYv2XVW87moOUOpShdXwCryafNQkrM0%2BRPcOuFSqHrbgvtFNBrttY%2FvW3XXdw%3D",
+        "deviceTokenFSO": "PMV60szrvUPvtY5rfRmOeDMaGOY4JzIK%2Fd69xZbah3sD31o67Z4ZgYv2XVW87moOUOpShdXwCryafNQkrM0%2BRPcOuFSqHrbgvtFNBrttY%2FvW3XXdw%3D",
+        "lookupLabel": "No Label"
+      }
+    },
+    "identificationData": {
+      "clientTransactionId": "04881596790634379651733458167884566595482222531744",
+      "delegated": false,
+      "orgName": "retail",
+      "sessionId": "939097621051158596712-ksat-reganam-krow||1596783734441",
+      "transactionId": "TRX_work-manager-task-21183495118947128272",
+      "userName": "Christian",
+      "userStatus": "UNVERIFIED",
+      "userType": "PERSISTENT"
+    },
+    "messageHeader": {
+      "apiType": "DIRECT_SOAP_API",
+      "requestType": "ANALYZE",
+      "timeStamp": "2020-08-07T08:57:14.441Z",
+      "version": "7.0"
+    },
+    "statusHeader": {
+      "reasonCode": 0.0,
+      "reasonDescription": "Operations were completed successfully\n\n",
+      "statusCode": 200.0
+    }
+  },
+  "requestBody": {
+    "requestBody": {
+      "autoCreateUserFlag": true,
+      "deviceManagementRequest": {
+        "actionTypeList": {
+          "deviceActionTypes": [
+            "UPDATE_DEVICE"
+          ]
+        },
+        "deviceData": {
+          "bindingType": "HARD_BIND"
+        }
+      },
+      "eventDataList": {
+        "eventData": [
+          {
+            "clientDefinedAttributeList": {
+              "fact": [
+                {
+                  "dataType": "STRING",
+                  "name": "userAgent",
+                  "value": "Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/20100101 Firefox/14.0.1"
+                },
+                {
+                  "dataType": "STRING",
+                  "name": "deviceUserAgent",
+                  "value": "mozilla/5.0 (windows nt 5.1; rv:14.0) gecko/20100101 firefox/14.0.1|5.0 (Windows)|Win32"
+                },
+                {
+                  "dataType": "STRING",
+                  "name": "deviceScreen",
+                  "value": "24|1280|800|766"
+                },
+                {
+                  "dataType": "STRING",
+                  "name": "cf",
+                  "value": "asdsogjdfojgkdfk"
+                }
+              ]
+            },
+            "clientDefinedEventType": "RICARICA_POSTEPAY",
+            "eventDescription": "RPP",
+            "eventType": "PAYMENT",
+            "transactionData": {
+              "amount": {
+                "amount": 100000.0,
+                "currency": "EUR"
+              },
+              "executionSpeed": "REAL_TIME",
+              "myAccountData": {
+                "accountName": "CHRISTIAN001",
+                "accountNumber": "IT85H0100501600000000011967"
+              },
+              "otherAccountBankType": "SAME_BANK",
+              "otherAccountData": {
+                "accountName": "CHRISTIAN001",
+                "accountNumber": "IT93700111104003605006",
+                "internationalAccountNumber": "+w3fTjlLmE9IsEw5//RE1DqKpVY/3Xw3NmiEqfnEtQo\u003d"
+              },
+              "otherAccountOwnershipType": "ME_TO_YOU",
+              "otherAccountType": "PERSONAL_ACCOUNT",
+              "schedule": "IMMEDIATE",
+              "transferMediumType": "WIRE"
+            }
+          }
+        ]
+      },
+      "runRiskType": "ALL",
+      "channelIndicator": "WEB",
+      "clientDefinedChannelIndicator": "POSTE WEB",
+      "actionTypeList": {
+        "genericActionTypes": [
+          "SET_USER_STATUS"
+        ]
+      },
+      "deviceRequest": {
+        "devicePrint": "version%3D1%26pm%5Ffpua%3Dmozilla%2F5%2E0%20%28windows%20nt%205%2E1%3B%20rv%3A14%2E0%29%20gecko%2F20100101%20firefox%2F14%2E0%2E1%7C5%2E0%20%28Windows%29%7CWin32%26pm%5Ffpsc%3D24%7C1280%7C800%7C766%26pm%5Ffpsw%3Dswf%7Cpdf%7Cdsw%7Cdrm%7Cwpm%7Cdrn%7Cmso%26pm%5Ffptz%3D1%26pm%5Ffpln%3Dlang%3Dit%2DIT%7Csyslang%3D%7Cuserlang%3D%26pm%5Ffpjv%3D0%26pm%5Ffpco%3D1",
+        "httpAccept": "text/html,application/xhtml+xml,application/xml;q\u003d0.9,*/*;q\u003d0.8",
+        "httpAcceptChars": "ISO-8859-1,utf-8;q\u003d0.7,*;q\u003d0.7",
+        "httpAcceptEncoding": "gzip, deflate",
+        "httpAcceptLanguage": "it, en",
+        "httpReferrer": "http://localhost:1080/abc/logon.jsp",
+        "ipAddress": "10.54.44.99",
+        "userAgent": "Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/20100101 Firefox/14.0.1"
+      },
+      "identificationData": {
+        "clientTransactionId": "04881596790634379651733458167884566595482222531744",
+        "orgName": "retail",
+        "userName": "Christian",
+        "userStatus": "VERIFIED",
+        "userType": "PERSISTENT"
+      },
+      "messageHeader": {
+        "apiType": "DIRECT_SOAP_API",
+        "requestType": "ANALYZE",
+        "timeStamp": "",
+        "version": "7.0"
+      }
+    },
+    "operation": "RICARICA POSTEPAY CC",
+    "clientDefinedChannelIndicator": "POSTE WEB"
+  }
+}
